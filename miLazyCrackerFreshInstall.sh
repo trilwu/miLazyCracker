@@ -10,6 +10,7 @@ sudo apt-get install git libnfc-bin autoconf libnfc-dev
 [ -d mfoc ] || git clone https://github.com/nfc-tools/mfoc.git
 (
     cd mfoc || exit 1
+    git checkout 48156f9b
     git reset --hard
     git clean -dfx
     # patch initially done against commit 48156f9b:
@@ -27,6 +28,7 @@ sudo apt-get install git libnfc-bin autoconf libnfc-dev
 [ -d crypto1_bs ] || git clone https://github.com/aczid/crypto1_bs
 (
     cd crypto1_bs || exit 1
+    git checkout 957702be
     git reset --hard
     git clean -dfx
     # patch initially done against commit 957702be:
